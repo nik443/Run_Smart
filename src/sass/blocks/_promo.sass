@@ -1,0 +1,135 @@
+.promo
+    min-height: 650px
+    padding: 21px 0 93px 0
+    background: url(../img/backgrounds/bg_header.jpg) center (center/cover) no-repeat
+    &__wrapper
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        margin-top: 90px
+    &__header
+        color: #ffffff
+        font-size: 42px
+        font-weight: 700
+        text-transform: uppercase
+        line-height: 42px
+    &__sabheader
+        color: #ffffff
+        font-size: 24px
+        font-weight: 500
+        text-transform: uppercase
+        line-height: 24px
+        margin-top: 15px
+    &__icons
+        margin-top: 65px
+        width: 425px
+        display: flex
+        justify-content: space-between
+    &__icon
+        color: #ffffff
+        font-size: 14px
+        font-weight: 500
+        width: 110px
+        text-align: center
+        img
+            display: block
+            margin: 0 auto
+            margin-bottom: 20px
+    &__link
+        color: #ffffff
+        font-size: 16px
+        font-weight: 500
+        margin-top: 18px
+        a 
+            color: #ffffff
+            text-decoration: underline
+            text-transform: uppercase
+
+//MEDIA------------------------------------------
+@media ( max-width: 1199px )
+    .promo                     
+        min-height: 550px
+        padding: 16px 0 70px 0
+        &__wrapper
+            margin-top: 75px
+            .button_main
+                margin-top: 50px
+        &__sabheader
+            margin: 10px 0 0 0
+        &__icons
+            margin-top: 50px
+        &__icon
+            img
+                margin-bottom: 10px
+
+@media ( max-width: 991px )
+    .promo                      
+        min-height: 450px
+        padding-bottom: 40px
+        &__wrapper
+            margin-top: 58px
+        &__header
+            font-size: 39px
+            line-height: 39px
+        &__sabheader
+            font-size: 22px
+            line-height: 22px
+        &__icon
+            font-size: 13px
+            width: 102px
+        &__link
+            font-size: 15px
+
+@media ( max-width: 767px )
+    .container
+        padding: 0 10px 0 10px
+    .promo                      
+        min-height: 250px
+        padding-bottom: 40px
+        background-position: 37% 0
+        &__icons
+            margin-top: 40px
+            flex-wrap: wrap
+        &__wrapper
+            margin-top: 65px
+            align-items: center
+        &__header
+            font-size: 34px
+            line-height: 34px
+        &__sabheader
+            font-size: 20px
+            line-height: 20px
+        &__icons
+            margin-top: 66px
+            width: 355px
+        &__icon
+            font-size: 13px
+            width: 102px
+        &__link
+            font-size: 15px
+
+@media ( max-width: 575px )
+    .promo
+        background-position: 20% 0                 
+        &__wrapper
+            text-align: center
+            margin-top: 38px
+            .button_main 
+                width: 235px
+                height: 42px
+                font-size: 15px
+        &__header
+            font-size: 25px
+            line-height: 25px
+        &__icons
+            width: 100%
+            flex-direction: column
+            justify-content: center
+        &__icon
+            font-size: 10px
+            line-height: 10px
+            width: 100%
+            margin-top: 22px
+        &__link
+            font-size: 13px
+        

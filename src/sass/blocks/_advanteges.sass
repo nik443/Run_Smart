@@ -1,0 +1,70 @@
+.advanteges
+    padding: 68px 0 70px 0
+    background-color: #f6f6f6
+    text-align: center
+    &__wrapper
+        margin-top: 62px
+        display: flex
+        justify-content: space-between
+    &__item
+        width: 250px
+        h3 
+            margin: 36px  0 0 0
+            color: #0d0d0d
+            font-size: 18px
+            font-weight: 700
+        p 
+            margin: 23px 0 0 0
+            color: #0d0d0d
+            font-size: 14px
+            font-weight: 300
+            a 
+                color: $main_color
+                text-decoration: underline
+                text-transform: uppercase
+                
+//MEDIA---------------------------------
+@media ( max-width: 991px )
+    .advanteges                  
+        padding: 55px 0 55px 0
+        &__item
+            width: 220px
+            h3
+                margin-top: 18px
+            p 
+                margin-top: 13px
+                font-size: 13px
+
+@media ( max-width: 767px )
+    .advanteges                    
+        &__wrapper
+            margin-top: 45px
+        &__item
+            width: 170px
+            h3
+                margin-top: 18px
+                font-size: 16px
+                line-height: 16px
+            p 
+                margin-top: 13px
+                font-size: 12px
+
+@media ( max-width: 575px )
+    .advanteges                
+        padding-top: 44px
+        &__wrapper
+            flex-direction: column
+            margin-top: 10px
+        &__item
+            width: 100%
+            margin-top: 28px
+            h3 
+                margin-top: 0
+                font-size: 15px
+                line-height: 15px
+            p 
+                font-size: 11px
+                margin-top: 5px
+            img 
+                width: 54px
+

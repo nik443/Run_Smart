@@ -1,0 +1,84 @@
+.comments
+    padding-bottom: 70px
+    .title
+        margin-bottom: 69px
+    .comment-item
+        display: flex
+        min-height: 176px
+        position: relative
+        margin-bottom: 100px
+        &::after
+            content: ""
+            width: calc( 100% - 10px )
+            height: 1px
+            background-color: #f6f6f6
+            position: absolute
+            bottom: -50px
+        &:last-child
+            margin-bottom: 0
+            &::after
+                display: none
+        img
+            width: 169px
+            height: 169px
+            display: block
+        &__content
+            margin-left: 62px
+        &__client
+            color: #0d0d0d
+            font-size: 18px
+            font-weight: 700
+        &__score
+            color: #646464
+            font-size: 14px
+            font-weight: 300
+            margin-top: 2px
+        p 
+            margin-top: 10px
+            color: #0d0d0d
+            font-size: 16px
+            font-weight: 500
+            margin-bottom: 0
+
+//MEDIA---------------------------------
+@media ( max-width: 991px )
+    .comments
+        .comment-item
+            &__client
+                font-size: 16px
+            p 
+                font-size: 14px
+
+@media ( max-width: 767px )
+    .comments
+        .comment-item
+            align-items: center
+            &__content
+                margin-left: 40px
+
+@media ( max-width: 575px )
+    .comments
+        .title
+            margin-bottom: 28px
+        .comment-item
+            flex-direction: column
+            text-align: center
+            img
+                width: 150px
+                height: 150px
+            &__content
+                margin-left: 0
+                &__client
+                    font-size: 14px
+                p 
+                    font-size: 12px
+                    text-align: left
+
+    
+    
+    
+
+
+
+            
+

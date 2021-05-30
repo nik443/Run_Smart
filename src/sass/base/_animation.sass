@@ -1,0 +1,14 @@
+@keyframes heartbeat
+    form //изначально
+        transform: scale(1) //масштаб 1
+        animation-timing-function: ease-out
+    50%
+        transform: scale(1.3) 
+        animation-timing-function: ease-in
+    to
+        transform: scale(1) //масштаб 2
+.advanteges__item_animated
+    animation-name: heartbeat
+    animation-duration: 1.5s
+    animation-iteration-count: infinite    
+
